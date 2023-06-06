@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:padding="12dp"
-                android:textColor="@color/btnColor"
+                android:textColor="@color/warm_blue"
                 android:hint="Enter your username"
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="5dp"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:padding="12dp"
-                android:textColor="@color/btnColor"
+                android:textColor="@color/warm_blue"
                 android:hint="Enter your email"
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="5dp"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:padding="12dp"
-                android:textColor="@color/btnColor"
+                android:textColor="@color/warm_blue"
                 android:hint="Enter your password"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="@color/btnColor"
+                android:backgroundTint="@color/warm_blue"
                 android:text="Register"
                 android:textSize="12sp"
                 app:cornerRadius="11dp"/>
@@ -109,7 +109,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_gravity="end|right"
                 android:text="Login here !"
-                android:textColor="@color/btnColor" />
+                android:textColor="@color/purple_500" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
