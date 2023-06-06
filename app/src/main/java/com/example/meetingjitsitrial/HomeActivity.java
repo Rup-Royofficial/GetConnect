@@ -65,7 +65,6 @@ public class HomeActivity extends AppCompatActivity {
                 shareIntent.setType("text/plain");
                 shareIntent.putExtra(Intent.EXTRA_TEXT,"Conference code: "+secretCodeHomeScreen.getText().toString() + "\nDownload  app via playstore");
                 startActivity(Intent.createChooser(shareIntent,"Share via"));
-                finish();
             }
         });
     }
