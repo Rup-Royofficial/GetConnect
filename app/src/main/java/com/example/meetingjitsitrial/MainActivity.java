@@ -71,4 +71,5 @@ public class MainActivity extends AppCompatActivity {
         ft.add(R.id.dashboardFragmentfm,fragment);
         ft.commit();
     }
+
 }
