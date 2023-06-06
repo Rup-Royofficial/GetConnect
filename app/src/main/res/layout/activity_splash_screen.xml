@@ -11,8 +11,10 @@
         android:id="@+id/splashScreenAnimation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:lottie_rawRes="@raw/splashscreenstickrotater"
+        app:lottie_rawRes="@raw/waveanimation"
         app:lottie_loop="true"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/_35sdp"
         app:lottie_autoPlay="true"/>
 
 </LinearLayout>
