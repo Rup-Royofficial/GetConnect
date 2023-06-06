@@ -48,6 +48,7 @@ dependencies {
 
 
     implementation ('org.jitsi.react:jitsi-meet-sdk:+') { transitive = true }
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
 
 
 }
