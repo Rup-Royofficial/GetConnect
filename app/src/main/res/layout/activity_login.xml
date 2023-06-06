@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:padding="12dp"
-                android:textColor="@color/btnColor"
+                android:textColor="@color/warm_blue"
                 android:hint="Email"
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="5dp"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:padding="12dp"
-                android:textColor="@color/btnColor"
+                android:textColor="@color/warm_blue"
                 android:hint="Password"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="@color/btnColor"
+                android:backgroundTint="@color/warm_blue"
                 android:text="Login"
                 android:textSize="12sp"
                 app:cornerRadius="11dp"/>
@@ -77,7 +77,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_gravity="end|right"
                 android:text="Register here !"
-                android:textColor="@color/btnColor"
+                android:textColor="@color/purple_500"
                 />
 
         </LinearLayout>
