@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Dashboard"
+        android:id="@+id/navigation_Dashboard"
+        android:icon="@raw/home_icon"/>
+    <item
+        android:title="Show us some love  ♥"
+        android:id="@+id/navigation_Payment"
+        />
+    <item
+        android:title="Developers"
+        android:id="@+id/navigation_Devs"
+        android:icon="@raw/home_icon"/>
+</menu>
