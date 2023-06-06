@@ -2,10 +2,13 @@ package com.example.meetingjitsitrial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.jitsi.meet.sdk.JitsiMeet;
 import org.jitsi.meet.sdk.JitsiMeetActivity;
@@ -17,7 +20,9 @@ import java.net.URL;
 public class HomeActivity extends AppCompatActivity {
 
     EditText secretCodeHomeScreen;
-    Button joinConferenceBtn,shareConferenceBtn;
+    Button joinConferenceBtn;
+
+    FloatingActionButton shareConferenceBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +31,9 @@ public class HomeActivity extends AppCompatActivity {
 
         secretCodeHomeScreen = findViewById(R.id.secretCodeHomeScreen);
         joinConferenceBtn = findViewById(R.id.joinConferenceBtn);
-        shareConferenceBtn = findViewById(R.id.shareConferenceBtn);
+        shareConferenceBtn = findViewById(R.id.shareConferenceVia);
 
         URL serverURL;
-
-
         try {
             serverURL = new URL("https://meet.jit.si");
             JitsiMeetConferenceOptions defaultOptions=
@@ -51,6 +54,18 @@ public class HomeActivity extends AppCompatActivity {
                         .build();
 
                 JitsiMeetActivity.launch(HomeActivity.this,options);
+            }
+        });
+
+        shareConferenceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_TEXT,"Conference code: "+secretCodeHomeScreen.getText().toString() + "\nDownload  app via playstore");
+                startActivity(Intent.createChooser(shareIntent,"Share via"));
+                finish();
             }
         });
     }

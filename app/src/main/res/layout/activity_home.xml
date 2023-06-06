@@ -41,7 +41,7 @@
                 android:hint="Write your secret code"
                 android:inputType="text"
                 android:padding="12dp"
-                android:textColor="@color/btnColor"
+                android:textColor="@color/purple_500"
                 android:textStyle="normal"
                 app:cornerRadius="4dp" />
 
@@ -74,13 +74,17 @@
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/shareConferenceVia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="@dimen/_16sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardHomeScreen"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintVertical_bias="0.868"
+        android:backgroundTint="@color/warm_blue"
+        android:src="@drawable/baseline_share_24"
+        app:rippleColor="@color/purple_500"/>
 
     <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
 <!--        android:id="@+id/bottomNavigationView"-->
